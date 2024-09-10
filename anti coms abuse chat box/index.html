@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box with Dark Mode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        <div id="chat-box" class="chat-box"></div>
+        <div class="input-container">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button id="send-btn">Send</button>
+            <button id="upload-btn">📷 Upload</button>
+            <button id="camera-btn">📸 Camera</button>
+            <input type="file" id="image-input" accept="image/*" style="display: none;">
+            <video id="camera" style="display: none;"></video>
+            <canvas id="canvas" style="display: none;"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
